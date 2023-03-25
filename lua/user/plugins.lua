@@ -45,6 +45,54 @@ lvim.plugins = {
   "renerocksai/telekasten.nvim",
   -- "renerocksai/calendar-vim",
   {
+    "ellisonleao/glow.nvim",
+    ft = { "markdown" },
+  },
+  {
+    "JellyApple102/easyread.nvim",
+  },
+  {
+    "MunifTanjim/prettier.nvim",
+    config = function()
+      require("prettier").setup {
+        bin = "prettierd", -- or `'prettierd'` (v0.22+)
+        filetypes = {
+          "css",
+          "graphql",
+          "html",
+          "javascript",
+          "javascriptreact",
+          "json",
+          "less",
+          "markdown",
+          "scss",
+          "typescript",
+          "typescriptreact",
+          "yaml",
+          "lua",
+        },
+      }
+    end,
+  },
+  { "catppuccin/nvim", as = "catppuccin" },
+  {
+    "wakatime/vim-wakatime",
+  },
+  {
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("auto-save").setup()
+    end,
+  },
+  {
+    -- sudo ln -s /opt/homebrew/bin/python3 /usr/local/bin/python
+    "jakewvincent/mkdnflow.nvim",
+    rocks = "luautf8", -- Ensures optional luautf8 dependency is installed
+    config = function()
+      require("mkdnflow").setup()
+    end,
+  },
+  {
     "saecki/crates.nvim",
     version = "v0.3.0",
     dependencies = { "nvim-lua/plenary.nvim" },

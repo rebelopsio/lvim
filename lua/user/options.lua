@@ -1,4 +1,5 @@
-lvim.colorscheme = "darkplus"
+lvim.colorscheme = "catppuccin-mocha"
+lvim.transparent_window = true
 lvim.log.level = "warn"
 lvim.builtin.alpha.active = true
 lvim.lsp.diagnostics.float.focusable = true
@@ -58,7 +59,7 @@ local options = {
   mouse = "a", -- allow the mouse to be used in neovim
   pumheight = 10, -- pop up menu height
   showmode = false, -- we don't need to see things like -- INSERT -- anymore
-  showtabline = 0, -- always show tabs
+  showtabline = 1, -- always show tabs
   smartcase = true, -- smart case
   smartindent = true, -- make indenting smarter again
   splitbelow = true, -- force all horizontal splits to go below current window
