@@ -3,7 +3,7 @@ lvim.builtin.which_key.mappings["v"] = { "<cmd>vsplit<cr>", "vsplit" }
 lvim.builtin.which_key.mappings["h"] = { "<cmd>nohlsearch<cr>", "nohl" }
 lvim.builtin.which_key.mappings["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" }
 lvim.builtin.which_key.mappings["/"] = { '<cmd>lua require("Comment.api").toggle.linewise.current()<CR>', "Comment" }
--- lvim.builtin.which_key.mappings["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" }
+lvim.builtin.which_key.mappings["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" }
 lvim.builtin.which_key.mappings["gy"] = "Link"
 lvim.builtin.which_key.mappings["r"] = {
   name = "Replace",
@@ -11,7 +11,7 @@ lvim.builtin.which_key.mappings["r"] = {
   w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
   f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
 }
-lvim.builtin.which_key.mappings["c"] = {
+lvim.builtin.which_key.mappings["G"] = {
   name = "ChatGPT",
   c = { "<cmd>ChatGPT<cr>", "Chat" },
   a = { "<cmd>ChatGPTActAs<cr>", "Act As" },

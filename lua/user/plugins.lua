@@ -1,5 +1,7 @@
 -- Additional Plugins
 lvim.plugins = {
+  "maxmx03/dracula.nvim",
+  "ThePrimeagen/vim-be-good",
   "ellisonleao/gruvbox.nvim",
   "LunarVim/synthwave84.nvim",
   "roobert/tailwindcss-colorizer-cmp.nvim",
@@ -44,6 +46,18 @@ lvim.plugins = {
   "petertriho/nvim-scrollbar",
   "renerocksai/telekasten.nvim",
   -- "renerocksai/calendar-vim",
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+    --after = {"nvim-web-devicons"},
+    config = function()
+      require("TroubleToggle").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+      }
+    end
+  },
   {
     "ellisonleao/glow.nvim",
     ft = { "markdown" },
